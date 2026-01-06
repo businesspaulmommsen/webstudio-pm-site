@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gastro Template</title>
+
+  <!-- ✅ Domain (SEO) -->
+  <link rel="canonical" href="https://webstudio-pm.com/">
+
+  <!-- ✅ Social Preview (optional) -->
+  <meta property="og:url" content="https://webstudio-pm.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gastro Template">
+  <meta property="og:description" content="Restaurant Webseite">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="Startseite">
+        <img class="brand-logo" src="assets/logo.svg" alt="Logo" />
+        <span class="brand-text">
+          <span class="brand-name" data-fill="brand.name">Restaurant</span>
+          <span class="brand-tag" data-fill="brand.tagline">Echte Küche. Kein Stress.</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#menu" class="nav-link">Menü</a>
+        <a href="#gallery" class="nav-link">Fotos</a>
+        <a href="#location" class="nav-link">Standort</a>
+        <a href="#contact" class="nav-link">Kontakt</a>
+      </nav>
+
+      <a class="btn btn-primary" data-href="links.reserve" href="#contact">Reservieren</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title" data-fill="hero.title">Hausgemacht, schnell serviert.</h1>
+          <p class="hero-sub" data-fill="hero.subtitle">Café & Restaurant in Hamburg.</p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" data-href="links.call" href="#">Anrufen</a>
+            <a class="btn btn-ghost" data-href="links.route" href="#" target="_blank" rel="noopener">Route</a>
+            <a class="btn btn-ghost" data-href="links.menu" href="#menu">Menü</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-card">
+              <div class="meta-label">Heute</div>
+              <div class="meta-value" data-fill="hours.today">12:00–22:00</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Adresse</div>
+              <div class="meta-value" data-fill="location.addressShort">Ottensen</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Küche</div>
+              <div class="meta-value" data-fill="brand.cuisine">Schwäbisch</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img class="hero-img" data-src="hero.image" src="assets/hero.jpg" alt="Hero Bild" />
+          <div class="hero-badge" data-fill="hero.badge">Frisch, schnell, ehrlich.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Menü</h2>
+          <p class="section-sub" data-fill="menu.note">Änderungen je nach Saison möglich.</p>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <div class="section-actions">
+          <a class="btn btn-ghost" data-href="links.menuPdf" href="#" target="_blank" rel="noopener">Speisekarte als PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Fotos</h2>
+          <p class="section-sub" data-fill="gallery.note">Ein paar Eindrücke.</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Standort</h2>
+          <p class="section-sub" data-fill="location.note">Einfach vorbeikommen.</p>
+        </div>
+
+        <div class="location-card">
+          <div class="location-info">
+            <div class="location-name" data-fill="location.name">Zum Beispiel</div>
+            <div class="location-address" data-fill="location.addressFull">Musterstraße 1, 22765 Hamburg</div>
+
+            <div class="hours">
+              <div class="hours-title">Öffnungszeiten</div>
+              <div class="hours-list" id="hoursList"></div>
+            </div>
+
+            <div class="location-actions">
+              <a class="btn btn-primary" data-href="links.route" href="#" target="_blank" rel="noopener">Route</a>
+              <a class="btn btn-ghost" data-href="links.call" href="#">Anrufen</a>
+              <a class="btn btn-ghost" data-href="links.reserve" href="#">Reservieren</a>
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe
+              title="Karte"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-iframe-src="links.mapsEmbed"
+              src=""
+              style="border:0;"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Kontakt</h2>
+          <p class="section-sub" data-fill="contact.note">Für Reservierungen und Fragen.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-label">Telefon</div>
+            <a class="contact-value" data-href="links.call" data-fill="contact.phoneDisplay" href="#">+49 …</a>
+
+            <div class="contact-label">E-Mail</div>
+            <a class="contact-value" data-href="links.mail" data-fill="contact.email" href="#">mail@example.com</a>
+
+            <div class="contact-label">Social</div>
+            <div class="social-row">
+              <a class="btn btn-ghost btn-icon" data-href="links.instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="assets/icon-instagram.png" alt="" class="social-icon">
+                <span class="sr-only">Instagram</span>
+              </a>
+
+              <a class="btn btn-ghost btn-icon" data-href="links.facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="assets/icon-facebook.png" alt="" class="social-icon">
+                <span class="sr-only">Facebook</span>
+              </a>
+
+              <a class="btn btn-ghost btn-icon" data-href="links.tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+                <img src="assets/icon-tiktok.png" alt="" class="social-icon">
+                <span class="sr-only">TikTok</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="form-row">
+              <label>
+                Name
+                <input name="name" type="text" placeholder="Dein Name" required />
+              </label>
+              <label>
+                Telefon
+                <input name="phone" type="tel" placeholder="Optional" />
+              </label>
+            </div>
+
+            <label>
+              Nachricht
+              <textarea name="message" rows="5" placeholder="Worum geht’s?" required></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Senden</button>
+            <p class="form-hint" data-fill="contact.formHint">Formular ist Demo. Für echte Nutzung brauchst du ein Backend.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-bar" role="navigation" aria-label="Schnellaktionen">
+    <a class="mobile-bar-btn" data-href="links.call" href="#">Anrufen</a>
+    <a class="mobile-bar-btn" data-href="links.route" href="#" target="_blank" rel="noopener">Route</a>
+    <a class="mobile-bar-btn primary" data-href="links.reserve" href="#">Reservieren</a>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand" data-fill="brand.name">Restaurant</div>
+        <div class="footer-small">© <span id="year"></span> Alle Rechte vorbehalten.</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

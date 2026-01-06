@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-label="Bistro Aurora Logo">
+  <defs>
+    <style>
+      .ink { stroke:#111; fill:none; stroke-width:10; stroke-linecap:round; stroke-linejoin:round; }
+      .fill { fill:#111; }
+      .muted { fill:#111; opacity:.65; }
+      text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- White background -->
+  <rect x="0" y="0" width="960" height="320" fill="#fff"/>
+
+  <!-- Emblem -->
+  <g transform="translate(90,60)">
+    <!-- plate -->
+    <circle class="ink" cx="100" cy="100" r="78"/>
+    <circle class="ink" cx="100" cy="100" r="46" opacity=".35"/>
+
+    <!-- fork (left) -->
+    <path class="ink" d="M55 52 v48"/>
+    <path class="ink" d="M40 52 v28"/>
+    <path class="ink" d="M50 52 v28"/>
+    <path class="ink" d="M60 52 v28"/>
+    <path class="ink" d="M70 52 v28"/>
+    <path class="ink" d="M40 80 h30"/>
+    <path class="ink" d="M55 100 v58"/>
+
+    <!-- knife (right) -->
+    <path class="ink" d="M145 52
+                         c18 18 18 44 0 62
+                         c-6 6-10 10-10 18
+                         v26"/>
+    <path class="ink" d="M135 158 h20"/>
+
+    <!-- small star -->
+    <path class="fill" d="M100 20 l6 14 15 1-12 10 4 15-13-8-13 8 4-15-12-10 15-1z" opacity=".9"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(300,92)">
+    <text x="0" y="60" font-size="64" letter-spacing="2" class="fill">BISTRO</text>
+    <text x="0" y="124" font-size="80" font-weight="700" letter-spacing="1" class="fill">AURORA</text>
+
+    <!-- divider line -->
+    <path class="ink" d="M0 148 h520" opacity=".35"/>
+
+    <!-- tagline -->
+    <text x="0" y="200" font-size="28" class="muted" letter-spacing="1">seasonal kitchen · coffee · wine</text>
+  </g>
+</svg>

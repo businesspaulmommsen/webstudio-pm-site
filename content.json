@@ -1,0 +1,65 @@
+{
+  "brand": {
+    "name": "Zum Beispiel",
+    "tagline": "Echte Küche. Kein Theater.",
+    "cuisine": "Schwäbisch"
+  },
+  "hero": {
+    "title": "Hausgemacht, schnell serviert.",
+    "subtitle": "Restaurant in Hamburg mit Fokus auf Klassiker.",
+    "badge": "Heute gute Laune optional.",
+    "image": "assets/hero.jpg"
+  },
+  "hours": {
+    "today": "12:00–22:00",
+    "weekly": [
+      { "day": "Montag", "time": "12:00–22:00" },
+      { "day": "Dienstag", "time": "12:00–22:00" },
+      { "day": "Mittwoch", "time": "12:00–22:00" },
+      { "day": "Donnerstag", "time": "12:00–22:00" },
+      { "day": "Freitag", "time": "12:00–23:00" },
+      { "day": "Samstag", "time": "12:00–23:00" },
+      { "day": "Sonntag", "time": "12:00–22:00" }
+    ]
+  },
+  "menu": {
+    "note": "Änderungen je nach Saison möglich.",
+    "items": [
+      { "name": "Käsespätzle", "desc": "Mit Röstzwiebeln und Salat.", "price": "12,90 €", "tag": "Vegetarisch" },
+      { "name": "Maultaschen", "desc": "In Brühe oder gebraten.", "price": "13,90 €", "tag": "Klassiker" },
+      { "name": "Schnitzel", "desc": "Mit Pommes oder Kartoffelsalat.", "price": "16,90 €", "tag": "Bestseller" }
+    ]
+  },
+  "gallery": {
+    "note": "Ein paar Eindrücke.",
+    "images": ["assets/gallery-1.jpg", "assets/gallery-2.jpg", "assets/gallery-3.jpg"]
+  },
+  "location": {
+    "name": "Zum Beispiel",
+    "addressShort": "Ottensen",
+    "addressFull": "Musterstraße 1, 22765 Hamburg",
+    "note": "5 Minuten vom Bahnhof, Parken in der Nähe."
+  },
+  "contact": {
+    "note": "Reservierungen am schnellsten per Telefon oder Online.",
+    "phoneDisplay": "+49 40 123456",
+    "email": "hallo@zubeispiel.de",
+    "instagramHandle": "@zubeispiel",
+    "formHint": "Formular ist Demo. Für echte Nutzung brauchst du ein Backend."
+  },
+  "links": {
+    "call": "tel:+4940123456",
+    "mail": "mailto:hallo@zubeispiel.de",
+    "route": "https://www.google.com/maps?q=Musterstra%C3%9Fe%201%2C%2022765%20Hamburg",
+    "mapsEmbed": "https://www.google.com/maps?output=embed&q=Musterstra%C3%9Fe%201%2C%2022765%20Hamburg",
+    "reserve": "#contact",
+    "menu": "#menu",
+    "menuPdf": "#",
+    "instagram": "https://instagram.com/zubeispiel",
+    "imprint": "impressum.html",
+    "privacy": "datenschutz.html"
+  },
+  "footer": {
+    "small": "© {year} Zum Beispiel. Alle Rechte vorbehalten."
+  }
+}
