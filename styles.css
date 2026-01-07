@@ -55,8 +55,10 @@ img{ max-width:100%; height:auto; }
   transform: translateX(-50%);
 }
 
+/* Text neben Logo weg */
 .brand-text{ display:none; }
 
+/* Logo BREITER + clean (keine Box) */
 .brand-logo{
   width: 120px;
   height: 56px;
@@ -327,11 +329,13 @@ img{ max-width:100%; height:auto; }
   .form-row{ grid-template-columns: 1fr; }
   .mobile-bar{ display:flex; }
 
+  /* Mobile: Brand wieder normal links */
   .brand{
     position: static;
     transform: none;
   }
 
+  /* Mobile: Logo breiter aber nicht riesig */
   .brand-logo{
     width: 96px;
     height: 44px;
@@ -340,7 +344,10 @@ img{ max-width:100%; height:auto; }
 
 /* =========================================================
    ✅ TALLY EMBED – macht den iFrame "clean" im Layout
+   (stylt nur den Rahmen außen, NICHT die Felder im iframe)
 ========================================================= */
+
+/* falls du .tally-wrap nutzt */
 .tally-wrap{
   width:100%;
   border-radius: 14px;
@@ -349,9 +356,28 @@ img{ max-width:100%; height:auto; }
   background: rgba(255,255,255,.03);
 }
 
+/* iframe selbst */
 .tally-frame{
   display:block;
   width:100%;
   border:0;
   background: transparent;
+}
+
+/* wenn du .form--tally verwendest (passt zu deinem HTML) */
+.form--tally{
+  padding: 16px;
+}
+
+.form--tally .tally-wrap{
+  border-radius: 14px;
+}
+
+.form--tally .tally-frame{
+  border-radius: 14px;
+}
+
+/* wenn iframe im wrapper steckt, übernimmt wrapper das rounding */
+.form--tally .tally-wrap .tally-frame{
+  border-radius: 0;
 }
