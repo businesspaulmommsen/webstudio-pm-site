@@ -173,26 +173,25 @@
             </div>
           </div>
 
-          <form class="form" id="contactForm">
-            <div class="form-row">
-              <label>
-                Name
-                <input name="name" type="text" placeholder="Dein Name" required />
-              </label>
-              <label>
-                Telefon
-                <input name="phone" type="tel" placeholder="Optional" />
-              </label>
-            </div>
+          <!-- ✅ TALLY EMBED (clean, ohne doppelte Card) -->
+          <div class="form form--tally" aria-label="Kontaktformular">
+            <iframe
+              class="tally-frame"
+              data-tally-src="https://tally.so/embed/Gx948Z?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="520"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Kontaktformular"
+            ></iframe>
 
-            <label>
-              Nachricht
-              <textarea name="message" rows="5" placeholder="Worum geht’s?" required></textarea>
-            </label>
+            <p class="form-hint">
+              Formular läuft über Tally. Nach Absenden erhältst du und der Besucher eine E-Mail, wenn du es in Tally so einstellst.
+            </p>
+          </div>
 
-            <button class="btn btn-primary" type="submit">Senden</button>
-            <p class="form-hint" data-fill="contact.formHint">Formular ist Demo. Für echte Nutzung brauchst du ein Backend.</p>
-          </form>
         </div>
       </div>
     </section>
@@ -219,5 +218,8 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- ✅ Wichtig für dynamicHeight + data-tally-src -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
