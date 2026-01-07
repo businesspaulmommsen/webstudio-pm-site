@@ -50,17 +50,13 @@ img{ max-width:100%; height:auto; }
   align-items:center;
   gap:10px;
   min-width: 0;
-
-  /* Brand/Logo exakt mittig im Header */
   position:absolute;
   left:50%;
   transform: translateX(-50%);
 }
 
-/* Text neben Logo weg */
 .brand-text{ display:none; }
 
-/* Logo BREITER + clean (keine Box) */
 .brand-logo{
   width: 120px;
   height: 56px;
@@ -331,13 +327,11 @@ img{ max-width:100%; height:auto; }
   .form-row{ grid-template-columns: 1fr; }
   .mobile-bar{ display:flex; }
 
-  /* Mobile: Brand wieder normal links */
   .brand{
     position: static;
     transform: none;
   }
 
-  /* Mobile: Logo breiter aber nicht riesig */
   .brand-logo{
     width: 96px;
     height: 44px;
@@ -346,7 +340,6 @@ img{ max-width:100%; height:auto; }
 
 /* =========================================================
    ✅ TALLY EMBED – macht den iFrame "clean" im Layout
-   (Wichtig: Das stylt NICHT die Felder IN Tally, nur den Rahmen)
 ========================================================= */
 .tally-wrap{
   width:100%;
