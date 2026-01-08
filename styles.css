@@ -408,3 +408,21 @@ img{ max-width:100%; height:auto; }
   margin: 10px 0 0;
   padding: 0 2px;
 }
+
+/* =========================================================
+   ✅ FIX: KEIN doppelter Rahmen um Tally
+   (der Rand kam von .tally-wrap innerhalb deiner Card)
+========================================================= */
+.form--tally .tally-wrap{
+  border: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+.form--tally .tally-frame{
+  border: 0 !important;
+  background: transparent !important;
+  display:block !important;
+}
