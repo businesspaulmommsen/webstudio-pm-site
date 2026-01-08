@@ -381,6 +381,7 @@ img{ max-width:100%; height:auto; }
 .form--tally .tally-wrap .tally-frame{
   border-radius: 0;
 }
+
 /* ===== Contact: Tally Card clean (keine doppelte Card) ===== */
 .form--tally{
   background: transparent;
